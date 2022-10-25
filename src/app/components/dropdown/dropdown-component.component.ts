@@ -21,7 +21,7 @@ export class DropdownComponentComponent implements IControl, OnInit {
   }
 
   onchange(val: any): void {
-    console.log(val);
+    console.log(val + 'i am in the drop down');
     this.controlData.value = val;
     this.sendMessage.emit({value: 'dropdown ' + this.controlData.controlName , controls: this.controlData.dependents});
   }

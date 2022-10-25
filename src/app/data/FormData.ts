@@ -75,13 +75,23 @@ export const FormData =  [
     order: 6,
     options: [{
       optionName: 'The fault in our stars',
-      value: '1',
+      value: 6,
       dependentKey: 'A'
     }, {
       optionName: 'Harry Potter',
-      value: '2',
+      value: 7,
       dependentKey: 'B'
-    }],
+    }, {
+      optionName: 'Rocky ',
+      value: 10,
+      dependentKey: 'C'
+    },
+      {
+        optionName: 'Creed ',
+        value: 7,
+        dependentKey: 'D'
+      }
+    ],
     validators: {
       required: false
     }
@@ -103,8 +113,14 @@ export const FormData =  [
       {
         optionName: 'Movie C',
         value: 'movie C',
-        dependentKey: 'B'
-      }],
+        dependentKey: 'C'
+      },
+      {
+        optionName: 'Movie D',
+        value: 'movie D',
+        dependentKey: 'D'
+      }
+      ],
     validators: {
       required: false
     }
